@@ -1,3 +1,1 @@
-import CardGroup from './card-group';
-
-export default CardGroup;
+export { default } from './card-group';

@@ -1,12 +1,16 @@
-import Card from '../sample-card';
+import SampleCard from '../sample-card';
 
 const CardGroup = () => {
   // TODO call an API for a list
-  const samples = ['/sounds/sad-violin.wav', '/sounds/sound1.wav'];
-  const samples2 = ['/sounds/sad-violin.wav'];
+  const samples = [
+    '/sounds/sad-violin.wav',
+    '/sounds/sound1.wav',
+    '/sounds/guess-whos-back.mp3',
+    '/sounds/cafeluta.mp3',
+  ];
 
   const cards = samples.map((sample, index) => (
-    <Card key={index} samplePath={sample} />
+    <SampleCard key={index} samplePath={sample} />
   ));
 
   return <>{cards}</>;
